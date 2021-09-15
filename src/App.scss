@@ -1,0 +1,73 @@
+.post_container{
+    .cont_box{
+        max-width: 600px;
+        margin-top: 1rem;
+    }
+    .post_box{
+        margin-left: 5px;
+        .textarea_box{
+            width: 100%;
+            height: 100px;
+            padding: 1rem;
+        }
+        .btn_post{
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+    }
+
+    .post_list{
+        height: calc(75vh - 25px);
+        overflow: auto;
+        padding: 5px;
+        .list_items{
+            padding: 0.5rem 3rem 0.5rem 1rem;
+            background: beige;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            position: relative;
+
+            .list_date{
+                background-color: beige;
+                position: absolute;
+                right: 3rem;
+                font-size: 12px;
+                bottom: 0.5rem;
+            }
+            .btn_remove{
+                background-color: #d43030;
+                color: black;
+                /* padding: 0px 7px; */
+                position: absolute;
+                right: 0.8rem;
+                top: 0.5rem;
+            }
+            .btn_edit{
+                background-color: #d43030;
+                color: white;
+                padding: 3px 1px;
+                position: absolute;
+                right: 1.5rem;
+                font-size: 11px;
+                top: 0.4rem;
+            }
+        }
+    }
+}
+
+//scrollbar design start-----------
+.scrollbar::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #8b8888;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
